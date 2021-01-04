@@ -6,10 +6,23 @@ After commiting in local repository we need to move it to remote(github/gitlab)r
 1.git remote add origin https://github.com/your_username/repo_name.git
 2.git push -u origin master  /*here origin is alias for SSH so that we don't have to write agai and again*/
 
-Voila !! You are done <add commit and push from next only no need of remote add>
+Voila !! You are done <add commit and push from next time only, no need of remote add>
 
 #some basic commands
 git status
 git log --oneline  //give commit id
+
+#Git Branch Commands
+git branch   //tells the branch you are in
+git branch localbranchname  //create new branch
+git add .  //add changes in branch
+git commit -m 'Task done by branch'
+git push -u origin localbranchname    //push to remote repo
+
+#Git Merge commands
+move to master to merge
+git checkout master
+git merge localbranchname
+git push -u origin master  
 
 
